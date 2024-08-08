@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+
+    <title>YouTube Video Downloader</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>YouTube Video Downloader</h1>
+    </header>
+    <div class="container">
+      <form id="urlForm">
+        <label for="urlInput">Enter YouTube URL:</label>
+        <input
+          type="text"
+          id="urlInput"
+          placeholder="https://youtube.com/watch?v=example"
+          required
+        />
+        <button type="submit">Download</button>
+      </form>
+
+      <div >
+        <h3 id="message" >
+           
+        </h3>
+      </div>
+    </div>
+      <div id="iframeContainer">
+        <iframe id="iframe" src="" frameborder="0"></iframe>
+        <p id="errorMessage" class="hidden">
+          Invalid URL or content cannot be displayed.
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+      <p>&copy; 2024 Shanigala Vishnu. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
