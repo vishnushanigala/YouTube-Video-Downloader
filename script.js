@@ -14,7 +14,7 @@ document.getElementById('urlForm').addEventListener('submit', async function(eve
     }
 
     try {
-        const response = await fetch('http://localhost:8000/download_video', { // Update the URL if needed
+        const response = await fetch('https://youtube-video-downloader-wab5.onrender.com/download_video', { // Update the URL if needed
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
